@@ -1,0 +1,114 @@
+.aboutDirectors {
+    padding: 140px 165px;
+    background-image: url(../../img/mask3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 64px
+    }
+
+    &__title {
+        @include myFont3;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 1110px;
+        height: 610px;
+        grid-row-gap: 48px;
+        grid-column-gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        gap: 50px;
+        background-color: #012F34;
+    }
+    &__item:nth-child(6){
+        padding: 0px 48px;
+    }
+
+    &__texts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__text1 {
+        @include myFont;
+        font-weight: 700;
+        color: #79C8C7
+    }
+
+    &__text2 {
+        @include myFont-serif;
+        font-size: 15px;
+    }
+    &__text3{
+        text-align: center;
+    }
+
+    &__btn{
+        padding: 20px 25px;
+        background-color:#F67E7E;
+        margin-bottom: -50px;
+        border-radius: 50%;
+        font-size: 20px;
+
+    }
+
+    &__btn6{
+        margin-bottom: -110px;
+        }    
+}
+
+@media screen and (max-width:770px) {
+    .aboutDirectors{
+        padding: 100px 97px;
+        background-image: url(../../img/mask2.svg);
+
+        &__grid{
+            width: 573px;
+            height: 900px;
+            grid-template-columns: auto auto;
+            grid-row-gap: 70px;
+            grid-column-gap: 10px;
+        }
+        &__item{
+            width: 281px;
+        }
+        &__btn6{
+            margin-bottom: -50px;
+            }  
+    }
+    
+}
+@media screen and (max-width:425px){
+    .aboutDirectors{
+        padding: 88px 24px;
+        background-image: url(../../img/mask.svg);
+        background-color: #004047;
+        &__grid{
+            height: 1778px;
+            width: 342px;
+            grid-template-columns: auto;
+        }
+        &__item{
+            width: 342px;
+        }
+        &__title{
+            font-size: 32px;
+        }
+    }
+}

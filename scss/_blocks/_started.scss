@@ -1,0 +1,79 @@
+.started {
+    padding: 76px 260px;
+    background-image: url('../../img/Group\ 7.png');
+    background-size: 100%;
+
+
+    &__block {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        @include myBtn();
+        transition: 0.5s;
+
+    }
+
+    &__btn:hover {
+        transition: 0.8s;
+        background-color: #fff;
+        color: #014E56;
+
+    }
+
+    &__title {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #012F34;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .started {
+        padding: 76px 98px;
+        background-repeat: no-repeat;
+        background-image: url('../../img/Group\ 8\ \(1\).svg');
+
+        &__title {
+            font-family: Livvic;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+
+        }
+
+        &__block {
+            align-items: center;
+        }
+
+        &__btn {
+            padding: 9px 33px 11px 32px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .started{
+        padding: 83px 24px;
+        background-image: url('../../img/Group12.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #F67E7E;
+
+        &__block{
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+    
+}

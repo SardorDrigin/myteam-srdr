@@ -1,0 +1,64 @@
+@mixin myFont {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+@mixin myFont-bold {
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #fff;
+}
+@mixin myFont3 {
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffff;
+}
+@mixin myFont4 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 28px;
+    color: #fff;
+}
+
+@mixin  myFont-serif {
+    font-family: Livvic;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0px;
+        color: #fff;
+}
+
+@mixin myBtn {
+    @include myFont();
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 9px 33px 11px 32px;
+    transition: 0.5s;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex1 {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

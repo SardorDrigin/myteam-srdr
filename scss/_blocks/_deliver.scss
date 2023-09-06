@@ -1,0 +1,141 @@
+.deliver {
+    padding: 140px 165px;
+    background: #004047;
+    // background-image: url('../img/Group77.svg');
+    // background-size: 100%; 
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1110px;
+
+    }
+
+    &__title {
+        width: 932px;
+       @include myFont3;
+        margin-bottom: 56px;
+    }
+
+    &__title--green {
+        @include myFont3;
+        color: #79C8C7;
+
+    }
+
+    &__about {
+        display: flex;
+        width: 1110px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 380px;
+    }
+
+    &__text1 {
+        @include myFont-serif;
+        text-align: center;
+
+        width: 350px;
+    }
+
+    &__texts {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__texts-one {
+        @include myFont;
+        text-align: center;
+        color: #79C8C7;
+    }
+
+    &__texts-two {
+        font-family: 'Livvic';
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        font-style: italic;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .deliver {
+        padding: 100px 97px;
+
+        &__block {
+            width: 573px;
+        }
+
+        &__title {
+            width: 573px;
+            font-size: 32px;
+        }
+
+        &__title--green {
+            font-size: 32px;
+        }
+
+        &__about {
+            width: 573px;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &__item {
+            width: 573px;
+        }
+
+        &__text1 {
+            width: 573px;
+        }
+    }
+
+}
+
+@media screen and (max-width:415px) {
+    .deliver {
+        padding: 140px 24px;
+        margin: 0;
+
+        &__block {
+            width: 327px;
+        }
+
+        &__title {
+            width:327px;
+            @include myFont3;
+           font-size: 30px;
+
+        }
+        &__title--green{
+            @include myFont3;
+            font-size: 32px;
+            color: $midlight2;
+        }
+        &__about{
+            width: 100%;
+        }
+        &__item{
+            width: auto;
+        }
+        &__texts{
+            width: 327px;
+        }
+        &__text1{
+            width: 327px;
+        }
+    }
+
+}

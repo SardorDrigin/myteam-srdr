@@ -1,0 +1,150 @@
+.contact {
+    padding: 0px 163px 120px 163px;
+    background-color: #014E56;
+    background-image: url(../../img/b1.svg),url(../../img/b2.svg);
+    background-repeat: no-repeat;
+    background-position: left top , right bottom;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    &__title {
+        @include myFont3;
+        font-size: 64px;
+        margin-bottom: 16px;
+    }
+
+    &__left {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__left--text {
+        @include myFont4;
+        font-size: 32px;
+        color: #F67E7E;
+    }
+
+    &__list {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__item {
+        width: 540px;
+        // background-color: cadetblue;
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__paragraf {
+        @include myFont4;
+        font-size: 18px;
+    }
+
+    &__right {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        // background-color: #014E56;
+        gap: 3px;
+
+        hr {
+            height: 1px;
+            width: 540px;
+
+        }
+    }
+
+    &__input {
+        width: 540px;
+        height: 55px;
+        background-color: transparent;
+        color: #fff;
+        @include myFont-serif;
+        border: 3px solid transparent;
+        outline: none;
+
+        &:nth-child(9) {
+            height: 70px;
+        }
+
+        &::placeholder {
+            @include myFont-serif;
+            color: #fff;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+
+        }
+    }
+
+    &__btn {
+        @include myFont-serif;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 123px;
+        border-radius: 24px;
+        background-color: white;
+        color:  #014E56;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .contact {
+        padding: 0px 113px 112px 113px;
+
+        &__block {
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+        &__left{
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:425px){
+    .contact{
+        padding: 0px 24px 88px 24px;
+        background-image: url(../../img/b3.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    
+    &__left{
+        width: 327px;
+    }
+    &__right{
+        width: 327px;
+        hr{
+            width: 327px;
+        }
+    }
+    &__list{
+        width: 327px;
+    }
+    &__item{
+        width: 327px;
+    }
+    &__input{
+        width: 327px;
+    
+    }
+    &__title{
+        font-size: 40px;
+    }
+    }
+} 

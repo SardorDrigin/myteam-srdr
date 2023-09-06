@@ -1,0 +1,117 @@
+.aboutIntro {
+    background-color: #014E56;
+    padding: 0px 165px 120px 165px;
+    background-image:  url('../img/Group\ 4.png');
+    background-repeat: no-repeat;
+    background-position:  bottom right;
+
+
+    &__section {
+        max-width: 1440px;
+        margin: 0 auto;
+       
+    }
+
+    &__wrapper {
+        @include flex-between();
+        align-items: flex-start;
+    }
+
+    &__title {
+        width: 350px;
+        @include myFont-bold;
+        font-size: 64px;
+
+    }
+
+
+    &__right {
+        width: 730px;
+        
+    }
+
+    &__hr {
+        width: 50px;
+        border: none;
+        height: 4px;
+        background-color: $midlight2;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        @include myFont;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .aboutIntro {
+        padding: 0px 43px 112px 43px;
+        background-image: url('../../img/Group1111.svg');
+        &__wrapper {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0px 115px 0px 115px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            text-align: center;
+            font-family: Livvic;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__hr {
+            display: none;
+        }
+        &__right{
+            width: 457px;
+            display: flex;
+        }
+        &__text {
+            width: 457px;
+            text-align: center;
+            font-size: 15px;
+            font-family: Livvic;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: center;
+
+        }
+
+        &__section {
+            background-image: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .aboutIntro {
+        padding: 0px 24px 108px 24px;
+        background-image: url('../../img/Group111.svg');
+        &__title {
+            width: 230px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__right {
+            width: 327px;
+            @include flex-column;
+
+        }
+
+        &__text {
+            width: 327px;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}

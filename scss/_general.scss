@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Livvic';
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1155px;
+    max-width: 100%;
+    margin: 0 auto;
+    // padding: 0 20px; 
+}

@@ -1,0 +1,130 @@
+.intro {
+    background-color: #014E56;
+
+
+    &__section {
+        max-width: 1440px;
+        margin: 0 auto;
+        background-image: url('../img/Group\ 8.png'), url('../img/Group\ 4.png');
+        background-repeat: no-repeat;
+        background-position: left top, bottom center;
+    }
+
+    &__wrapper {
+        @include flex-between();
+        padding-bottom: 250px;
+        background-image: url('../img/Group\ 4.png');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    &__title {
+        width: 532px;
+        @include myFont-bold;
+
+        .intro__title--pink {
+            @include myFont-bold;
+            color: rgb(231, 122, 140);
+        }
+    }
+
+
+    &__right {
+        width: 445px;
+    }
+
+    &__hr {
+        width: 50px;
+        border: none;
+        height: 4px;
+        background-color: $midlight2;
+        margin-bottom: 79px;
+    }
+
+    &__text {
+        @include myFont;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .intro {
+        &__wrapper {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__title {
+            text-align: center;
+            font-family: Livvic;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: 0px;
+            text-align: center;
+
+            .intro__title--pink {
+                text-align: center;
+                font-family: Livvic;
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 56px;
+                letter-spacing: 0px;
+                text-align: center;
+
+            }
+        }
+
+        &__hr {
+            display: none;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 15px;
+            font-family: Livvic;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: center;
+
+        }
+
+        &__section {
+            background-image: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .intro {
+
+        &__title {
+            width: 230px;
+            font-size: 40px;
+            line-height: 40px;
+
+            .intro__title--pink {
+                width: 327px;
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+
+
+
+        &__right {
+            width: 330px;
+            @include flex-column;
+
+        }
+
+        &__text {
+            width: 327px;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
